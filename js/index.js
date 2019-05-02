@@ -43,7 +43,6 @@ const siteContent = {
 
 
 
-            //NAV
 
 const navitems = document.querySelectorAll('a');
 
@@ -61,12 +60,42 @@ navitems[4].textContent = 'About';
 
 navitems[5].textContent = 'Contact';
 
+const navitems = document.querySelectorAll('a');
+console.log(navitems);
 
-              //H1
+navitems[0].textContent = 'Services';
+
+navitems[1].textContent = 'Product';
+
+navitems[2].textContent = 'Vision';
+
+navitems[3].textContent = 'Features';
+
+navitems[4].textContent = 'About';
+
+navitems[5].textContent = 'Contact';
+
+const navArr = Array.from(navitems);
+console.log(navArr);
+
+navArr.forEach(item => {
+  item.style.color = 'green';
+});
+
+const navbar = document.querySelector('a');
+
+const moreNavItems = document.createElement('a');
+moreNavItems.textContent = 'Story';
+navbar.prepend(moreNavItems);
+
+const newNavItem = document.createElement('a');
+newNavItem.textContent = 'Info';
+navbar.appendChild(newNavItem);
+
+
 const ctah1 = document.querySelector('.cta-text h1');
 
 console.log(ctah1);
-    <h1>​</h1>​
 
 ctah1.setAttribute('style', 'white-space: pre;');
 
@@ -77,8 +106,6 @@ ctah1.textContent += 'IS \r\n';
 ctah1.textContent += 'AWESOME';
 
 
-          //BUTTON
-
 const button = document.querySelector('.cta-text button');
 
 console.log(button);
@@ -87,16 +114,11 @@ console.log(button);
 button.textContent = 'Get Started';
 
 
-      //Code Image
-
 const ctaImg = document.querySelector('#cta-img');
 
 console.log(ctaImg);
 
 ctaImg.src = 'img/header-img.png';
-
-
-      //CONTENT AREA
 
 const h4Tags = document.querySelectorAll('.text-content h4');
 
@@ -132,8 +154,6 @@ console.log(middleImg);
 
 middleImg.src = 'img/mid-page-accent.jpg';
 
-
-          //FOOTER SECTION
 
 const lastH4 = document.querySelector('.contact h4');
 
