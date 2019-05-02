@@ -60,21 +60,6 @@ navitems[4].textContent = 'About';
 
 navitems[5].textContent = 'Contact';
 
-const navitems = document.querySelectorAll('a');
-console.log(navitems);
-
-navitems[0].textContent = 'Services';
-
-navitems[1].textContent = 'Product';
-
-navitems[2].textContent = 'Vision';
-
-navitems[3].textContent = 'Features';
-
-navitems[4].textContent = 'About';
-
-navitems[5].textContent = 'Contact';
-
 const navArr = Array.from(navitems);
 console.log(navArr);
 
@@ -118,7 +103,7 @@ const ctaImg = document.querySelector('#cta-img');
 
 console.log(ctaImg);
 
-ctaImg.src = 'img/header-img.png';
+ctaImg.src = ('img/header-img.png');
 
 const h4Tags = document.querySelectorAll('.text-content h4');
 
