@@ -41,19 +41,53 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const navSection = document.querySelectorAll('.container a');
-console.log(navSection);
-const navSectionArr = Array.from(navSection);
-console.log(navSectionArr);
+let navItem = document.querySelectorAll('a');
+console.log(navItem);
+
+navItem[0].textContent = siteContent["nav"]["nav-item-1"];
+navItem[1].textContent = siteContent["nav"]["nav-item-2"];
+navItem[2].textContent = siteContent["nav"]["nav-item-3"];
+navItem[3].textContent = siteContent["nav"]["nav-item-4"];
+navItem[4].textContent = siteContent["nav"]["nav-item-5"];
+navItem[5].textContent = siteContent["nav"]["nav-item-6"];
 
 let awesome = document.querySelector('.cta-text h1');
 console.log(awesome);
-awesome.textContent = "DOM IS AWESOME!";
+awesome.textContent = siteContent["cta"]["h1"];
 
 let button = document.querySelector('button');
 console.log(button);
-button.textContent = "Get Started";
+button.textContent = siteContent["cta"]["button"];
 
 let image = document.getElementById('cta-img');
 console.log(image);
-image.setAttribute('src', 'img/header-img.png')
+image.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//all h4 tags
+
+let headers = document.querySelectorAll('h4');
+console.log(headers);
+
+headers[0].textContent = siteContent["main-content"]["features-h4"];
+headers[1].textContent = siteContent["main-content"]["about-h4"];
+headers[2].textContent = siteContent["main-content"]["services-h4"];
+headers[3].textContent = siteContent["main-content"]["product-h4"];
+headers[4].textContent = siteContent["main-content"]["vision-h4"];
+headers[5].textContent = siteContent["contact"]["contact-h4"];
+
+let middlePhoto = document.getElementById('middle-img');
+console.log(middlePhoto);
+middlePhoto.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let pTags = document.querySelectorAll('p');
+console.log(pTags);
+
+pTags[0].textContent = siteContent["main-content"]["features-content"];
+pTags[1].textContent = siteContent
+pTags[2].textContent = siteContent
+pTags[3].textContent = siteContent
+pTags[4].textContent = siteContent
+pTags[5].textContent = siteContent
+pTags[6].textContent = siteContent
+pTags[7].textContent = siteContent
+pTags[8].textContent = siteContent
