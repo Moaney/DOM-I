@@ -63,8 +63,6 @@ let image = document.getElementById('cta-img');
 console.log(image);
 image.setAttribute('src', siteContent["cta"]["img-src"]);
 
-//all h4 tags
-
 let headers = document.querySelectorAll('h4');
 console.log(headers);
 
@@ -82,12 +80,12 @@ middlePhoto.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 let pTags = document.querySelectorAll('p');
 console.log(pTags);
 
-pTags[0].textContent = siteContent["main-content"]["features-content"];
-pTags[1].textContent = siteContent
-pTags[2].textContent = siteContent
-pTags[3].textContent = siteContent
-pTags[4].textContent = siteContent
-pTags[5].textContent = siteContent
-pTags[6].textContent = siteContent
-pTags[7].textContent = siteContent
-pTags[8].textContent = siteContent
+pTags[0].textContent = siteContent["main-content"]["features-content"]
+pTags[1].textContent = siteContent["main-content"]["about-content"]
+pTags[2].textContent = siteContent["main-content"]["services-content"]
+pTags[3].textContent = siteContent["main-content"]["product-content"]
+pTags[4].textContent = siteContent["main-content"]["vision-content"]
+pTags[5].textContent = siteContent["contact"]["address"]
+pTags[6].textContent = siteContent["contact"]["phone"]
+pTags[7].textContent = siteContent["contact"]["email"]
+pTags[8].textContent = siteContent["footer"]["copyright"]
