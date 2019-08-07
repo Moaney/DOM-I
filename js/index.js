@@ -55,12 +55,26 @@ navItem[3].textContent = siteContent["nav"]["nav-item-4"];
 navItem[4].textContent = siteContent["nav"]["nav-item-5"];
 navItem[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
 const navItemArr = Array.from(navItem);
 console.log(navItemArr);
 
 navItemArr.forEach(item => {
   item.style.color = 'green';
 });
+
+let newA = document.createElement('a');
+console.log(newA);
+
+let firstA = document.createElement('a');
+console.log(firstA);
+
+firstA.textContent = "Thoughts";
+newA.textContent = "Pictures";
+
+nav.prepend("Thoughts")
+nav.appendChild(newA)
+
 
 let awesome = document.querySelector('.cta-text h1');
 console.log(awesome);
